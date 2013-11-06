@@ -1,0 +1,86 @@
+@charset "windows-1251";
+/* CSS Document */
+
+
+ul#cssmenu {
+        width:200px;
+        
+        border: 0 none;
+        padding: 0;
+        list-style: none;
+        background: #ffffff;
+        height: 80px;
+        font: 12px/28px Verdana, Arial;
+
+		text-indent:1px;
+		
+		position:relative;
+		
+}
+
+ul#cssmenu li {
+        margin;
+        border: 0 none;
+        width: 100px;
+        float: left;
+        display: inline;
+        list-style: none;
+        position: relative;
+        height: 80px;
+		
+}
+
+ul#cssmenu ul {
+        margin: 0;
+        border: 0 none;
+        padding: 0;
+        width:155px;
+        
+        list-style: none;
+        display: none;
+        position: absolute;
+        top: 30px;
+        left: 0;
+}
+
+ul#cssmenu ul:after {
+        clear: both;
+        display: block;
+        font: 1px/0px serif;
+        content: ".";
+        height: 0;
+        visibility: hidden;
+}
+
+ul#cssmenu ul li {
+        width: 155px;
+        float: left;
+        display: block !important;
+        display: inline;
+}
+
+/* Main Menu */
+ul#cssmenu a {
+	
+        border: 0px none;
+        padding: 8px 10px;
+        float: none !important;
+        float: left;
+        display: block;
+        background: #057054;
+        color: #ffffff;
+        font: 12px/28px Verdana, Arial;
+        text-decoration: none;
+        height: 70px;
+}
+
+/* Main Menu Hover */
+ul#cssmenu a:hover,
+ul#cssmenu li:hover a,
+ul#cssmenu li.iehover a {
+        background: #3cd19d;
+        color:#ffffff;
+      
+		font:bold;
+}
+
